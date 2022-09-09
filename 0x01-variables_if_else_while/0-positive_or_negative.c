@@ -1,60 +1,29 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <time.h>
 
-
-
-/** 
-
-
-
-* Main - Entry point
-
-
-
-* Return: Always success
-
-
-
-* /
-
-
-
-int main(void)
-
-{
-
+/**
+* main - print if number is positive at the entry point
+*
+* Description; using the main function
+* this points "programming is positive, zero or negative
+* Return: 0
+*/
 int n;
 
-int L;
-
-int char[] = “Last digit of”
-
-
-
-srand (time (o));
-
+srand (time(0));
 n = rand() - RAND_MAX / 2
-
-
-
-if  (n > 0)
-
-             printf (“%d is positive\n”,n);
-
-else if (n == 0)
-
-             printf (“%d is zero\n”,n);
-
-else       
-
-             printf (“%d is negative\n”,n);
-
-
-
-Return (0);
-
+  /* your code enters here */
+if (n > 0)
+{
+  printf("%d is positive\n", n);
 }
-
+else if (n == 0)
+{
+  printf("% is zero\n", n);
+}
+else if (n < 0)
+{
+  printf("%d is negative\n", n);
+}
+return (0);

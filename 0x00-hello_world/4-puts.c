@@ -1,9 +1,13 @@
 #include <stdio.h>
+
 /**
- * Description: main - print out a string to stdout
- * Return: 0 if success
+ * main - print out the function
+ *
+ * Description: using the main function
+ * this program print "Programming is like building a multilingual puzzle
+ * Return: 0
  */
-int main(main)
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);

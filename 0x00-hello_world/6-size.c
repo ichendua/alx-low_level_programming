@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
- * main - point the string in the put function
+ * main - String entry point
  *
  * Description: using the main function
- * this program prints "Programming is like building a multilingual puzzle
  * Return: 0
  */
 int main (void)

@@ -3,8 +3,8 @@
  * print_alphabet - print alphabet of functions
  *
  * Return: void
+ */
  *
- * /
 void print_alphabet(void)
 {
 	int i;

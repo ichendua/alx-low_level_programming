@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * _puts - prints a string followed by a new line.
@@ -9,7 +9,7 @@ nclude "main.h"
 
 void _puts(char *str)
 {
-	int i = 0
+	int i = 0;
 
 		while (str[i] != '\n' && str[i] != '\0')
 		{

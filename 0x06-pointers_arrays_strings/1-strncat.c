@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <string>
 
 /**
@@ -9,7 +8,6 @@
  * @n: third parameter
  * Return: string
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);

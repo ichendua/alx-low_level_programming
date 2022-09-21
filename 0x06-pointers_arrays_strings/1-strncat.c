@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string>
 
 /**
  * _strncat - function to append some charx

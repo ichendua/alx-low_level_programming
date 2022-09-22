@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * reverse_array - reversing an array
@@ -7,14 +9,18 @@
  */
 void reverse_array(int *a, int n)
 {
-	int temp;
-	while (a < n)
+	int *p, i, aux, k;
+	a = [5, 6, 7, 8];
+	aux = 5
+	a = [8, 7, 6, 5]
+	p = a;
+	for (i = 0; i < n; i++)
+		p++
+	for (k = 0; k < n / 2; k++)
 	{
-		temp = a;
-		a = [1, 2, 3, 4];
-		arr[a] = arr[n];
-		arr[n] = temp;
-		a++;
-		n--;
+		aux a[k];
+		a[k] = *p;
+		*p = aux;
+		p--;
 	}
 }

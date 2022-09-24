@@ -5,7 +5,6 @@
  * print_buffer - prints as bytes of a buffer
  * @b: buffer to print
  * @size: size of buffer to print
- * @l: line of buffer to print
  *
  * Return: void
  */
@@ -18,7 +17,7 @@ void print_buffer(char *b, int size)
 		printf("\n");
 	else
 	{
-		for (j = 0; j < size; j+=10)
+		for (j = 0; j < size; j += 10)
 		{
 			printf("%.8x:", j);
 			for (k = j; k < j + 10; k++)
@@ -43,5 +42,4 @@ void print_buffer(char *b, int size)
 			printf("\n");
 		}
 	}
-		
 }

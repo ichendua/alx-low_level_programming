@@ -1,19 +1,12 @@
-/*
- * File: 0-memset.c
- * Auth: not
- */
-
 #include "main.h"
 /**
-* _memset - fills the first n bytes of the memory area
-* @s: Apointer to the memory area to be filled.
-* @c: The character to fill the memory area with.
-* @n: The number of bytes to be filled.
-* Description _memset: over there
-*
-* Return: A pointer to be filled memory area @s
-*
-*/
+ * memset - fills the first n bytes of the memory area
+ * @s: address to memory block
+ * @b: char to be used
+ *
+ * Return: pointer to memory block
+ */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int index;

@@ -9,11 +9,10 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int index;
-	unsigned char *memory = s, value = c;
-
-	for (index = 0; index < n; index++)
-		memory[index] = value
-	
-	return (memory);
+	while (n)
+	{
+		s[n - 1] = b
+		n--;
+	}
+	return (s);
 }

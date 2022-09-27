@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - fills the first n bytes of the memory area
+ * _memset
  * @s: address to memory block
  * @b: char to be used
  * @n: number of bytes to be used
@@ -11,10 +11,10 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	while (n)
+	unsigned int a;
+	for (a = 0; a < n; a++)
 	{
-		s[n - 1] = b
-		n--;
+		s[a] = b;
 	}
 	return (s);
 }

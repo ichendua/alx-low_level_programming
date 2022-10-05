@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -67,8 +67,8 @@ char **strtow(char *str)
 		if (p[i] == NULL)
 		{
 			for ( ; i >= 0; --i)
-				free(p[i])
-			free(p)
+				free(p[i]);
+			free(p);
 			return (NULL);
 		}
 		/* initialize each element of the nested array with the word*/

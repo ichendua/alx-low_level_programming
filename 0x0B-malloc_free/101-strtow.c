@@ -25,16 +25,16 @@ int wordcounter(char *str, int pos, char firstchar)
 			flag = 1;
 		}
 		if (pos > 0 && pos == wordcount)
-		{	
+		{
 			if (pos > 0 && pos == wordcount && firstchar > 0)
 				return (i);
 			for (charcount = 0; str[i + charcount + 1] != ' '; charcount++)
 				;
 			return (charcount);
-		}	
+		}
 		if (str[i] == ' ')
 			flag = 0;
-	}	
+	}
 	return (wordcount);
 }
 /**
@@ -46,7 +46,7 @@ char **strtow(char *str)
 {
 	int wc, wordlen, getfirstchar, len, i, j;
 	char **p;
-	
+
 	for (len = 0; str[len]; len++)
 		;
 	if (str == NULL)
@@ -70,14 +70,19 @@ char **strtow(char *str)
 				free(p[i])
 			free(p)
 			return (NULL);
-		}															/* initialize each element of the nested array with the word*/
+		}
+		/* initialize each element of the nested array with the word*/
 		getfirstchar = wordcounter(str, i + 1, 1);
 		if (str[0] != ' ' && i > 0)
 			getfirstchar++;
-		else if (str[0] == ' ')														getfirstchar++;													for (j = 0; j < wordlen; j++)
+		else if (str[0] == ' ')
+			getfirstchar++;
+
+		for (j = 0; j < wordlen; j++)
 			p[i][j] = str[getfirstchar + j];
 		p[i][j] = '\0';
 	}
 	p[i] = NULL;
 	return (p);
 }
+
